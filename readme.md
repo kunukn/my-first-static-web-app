@@ -5,3 +5,13 @@
 This repo is used as a starter for a _very basic_ HTML web application using no front-end frameworks.
 
 This repo has a dev container. This means if you open it inside a [GitHub Codespace](https://github.com/features/codespaces), or using [VS Code with the remote containers extension](https://code.visualstudio.com/docs/remote/containers), it will be opened inside a container with all the dependencies already installed.
+
+## SWA CLI
+
+Example:
+
+ensure `staticwebapp.config.json` exists in the `app-location` folder. This enables API deploy to work.
+
+```
+swa deploy --verbose=silly --app-name my-first-static-web-app --app-location ./src/ --api-location ./api/ --env production --deployment-token <TOKEN-KEY>
+```
